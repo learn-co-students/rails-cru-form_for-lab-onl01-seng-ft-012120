@@ -1,0 +1,7 @@
+<h1>Artist Form</h1>
+<%= form_for( @artist , remote: true) do |f| %>
+<%= f.text_field :name %>
+<%= f.text_area :bio %>
+<%= f.submit %>
+
+<% end %>
