@@ -1,0 +1,14 @@
+<%= form_for(@song) do |f| %>
+    <%= label_tag :name %>
+    <%= f.text_field :name %>
+
+    <%= label_tag :artist %>
+    <%# <%= f.select :artist_id, options_from_collection_for_select(@artists, "id", "name") %>
+    <%= f.number_field :artist_id %>
+
+    <%= label_tag :genre %>
+    <%# <%= f.select :genre_id, options_from_collection_for_select(@genres, "id", "name") %>
+    <%= f.number_field :genre_id %>
+
+    <%= button_tag "Create Song"%>
+<% end %>
